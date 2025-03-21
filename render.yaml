@@ -1,6 +1,7 @@
 services:
   - type: web
     name: metabase
+    region: ohio
     env: docker
     repo: https://github.com/render-examples/metabase.git # optional
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
@@ -13,4 +14,5 @@ services:
 databases:
   - name: elephant
     databaseName: metabasedb
+    region: ohio
     ipAllowList: [] # only allow internal connections
